@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingLeft="70dp"
+    android:paddingRight="70dp">
+
+
+    <Button
+        android:id="@+id/btn_terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:width="300dp"
+        android:height="80dp"
+        android:text="@string/btn_terms_text"
+        android:onClick="launchTermsMain"/>
+
+    <Button
+        android:id="@+id/btn_courses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:width="300dp"
+        android:height="80dp"
+        android:text="@string/btn_courses_text"
+        android:onClick="launchCoursesMain"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Student Scheduler</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_terms_text">Terms</string>
+    <string name="btn_courses_text">Courses</string>
+    <string name="btn_assessments_text">Assessments</string>
+    <string name="title_activity_terms">Terms</string>
+    <string name="title_activity_courses">Courses</string>
+    <string name="title_activity_assessments">Assessments</string>
+    <string name="title_activity_detail_term">Term Detail</string>
+    <string name="textStart">Start Date:</string>
+    <string name="textEnd">End Date:</string>
+    <string name="btn_mentors_text">Mentors</string>
+    <string name="title_activity_mentors">Mentors</string>
+    <string name="title_activity_detail_mentor">Mentor Detail</string>
+    <string name="title_activity_mentor_add">Add Mentor</string>
+    <string name="title_activity_detail_course">Course Detail</string>
+    <string name="btn_course_list_text">View Course List</string>
+    <string name="title_activity_list_of_courses_by_term">Course List</string>
+    <string name="title_activity_course_add">Add Course</string>
+    <string name="startDateAlert">Start Date Alert</string>
+    <string name="endDateAlert">End Date Alert</string>
+    <string name="assessmentDueDateAlert">Goal Alert</string>
+    <string name="channel_name">notification channel</string>
+    <string name="channel_description">notificaiton channel description</string>
+    <string name="btn_assessment_list_text">View Assessment List</string>
+    <string-array name="status_array">
+        <item>in progress</item>
+        <item>completed</item>
+        <item>dropped</item>
+        <item>plan to take</item>
+    </string-array>
+    <string-array name="assessment_type_array">
+        <item>objective</item>
+        <item>performance</item>
+    </string-array>
+    <string name="title_activity_detail_assessment">Assessment Detail</string>
+    <string name="title_activity_list_of_assessments_by_course">Assessment List</string>
+    <string name="title_activity_assessment_add">Add Assessment</string>
+    <string name="title_activity_term_add">Add Term</string>
+</resources>

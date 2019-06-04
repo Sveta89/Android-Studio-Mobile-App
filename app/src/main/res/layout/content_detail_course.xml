@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetailCourseActivity"
+    tools:showIn="@layout/activity_detail_course">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit2CourseCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course Code" />
+
+                <EditText
+                    android:id="@+id/edit2CourseTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course Title" />
+
+
+                <EditText
+                    android:id="@+id/edit2StartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Start Date MM/dd/yyyy" />
+
+                <CheckBox
+                    android:id="@+id/start2DateAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startDateAlert"
+                    android:onClick="selectStartDate"
+                    />
+
+
+                <EditText
+                    android:id="@+id/edit2EndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Anticipated End Date MM/dd/yyyy" />
+
+                <CheckBox
+                    android:id="@+id/end2DateAlert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/endDateAlert"
+                    android:onClick="selectEndDate"
+                    />
+
+                <EditText
+                    android:id="@+id/edit2MentorName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Mentor Name" />
+
+                <EditText
+                    android:id="@+id/edit2MentorPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Mentor Phone Number" />
+
+                <EditText
+                    android:id="@+id/edit2MentorEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Mentor Email" />
+
+                <EditText
+                    android:id="@+id/edit2Mentor2Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Mentor Name" />
+
+                <EditText
+                    android:id="@+id/edit2Mentor2Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Mentor Phone Number" />
+
+                <EditText
+                    android:id="@+id/edit2Mentor2Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="Mentor Email" />
+
+
+                <Spinner
+                    android:id="@+id/edit2Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:spinnerMode="dropdown"
+                    />
+
+                <EditText
+                    android:id="@+id/edit2Notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Notes" />
+
+
+                <Button
+                    android:id="@+id/btnListAssessments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:text="@string/btn_assessment_list_text"
+                    android:onClick="launchListOfAssessments"/>
+                </LinearLayout>
+            </ScrollView>
+
+</RelativeLayout>

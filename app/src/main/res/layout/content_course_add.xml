@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CourseAddActivity"
+    tools:showIn="@layout/activity_course_add">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editCourseCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Couse Code" />
+
+        <EditText
+            android:id="@+id/editCourseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course Title" />
+
+
+        <EditText
+            android:id="@+id/editStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Date MM/dd/yyyy" />
+
+        <CheckBox
+            android:id="@+id/startDateAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startDateAlert"
+            android:onClick="selectStartDate"
+            />
+
+        <EditText
+            android:id="@+id/editEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Anticipated End Date MM/dd/yyyy" />
+
+        <CheckBox
+            android:id="@+id/endDateAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endDateAlert"
+            android:onClick="selectEndDate" />
+
+        <EditText
+            android:id="@+id/editMentorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Mentor Name" />
+
+        <EditText
+            android:id="@+id/editMentorPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Mentor Phone Number" />
+
+        <EditText
+            android:id="@+id/editMentorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Mentor Email" />
+
+        <EditText
+            android:id="@+id/editMentor2Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Mentor Name" />
+
+        <EditText
+            android:id="@+id/editMentor2Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Mentor Phone Number" />
+
+        <EditText
+            android:id="@+id/editMentor2Email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Mentor Email" />
+
+        <Spinner
+            android:id="@+id/editStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/editNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:hint="Notes" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DetailAssessmentActivity"
+    tools:showIn="@layout/activity_detail_assessment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editAssessmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Assessment Title" />
+
+    <Spinner
+        android:id="@+id/editAssessmentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editAssessmentDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Due Date MM/dd/yyyy" />
+
+        <CheckBox
+            android:id="@+id/assessmentGoalAlert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43dp"
+            android:text="@string/assessmentDueDateAlert"
+            android:onClick="selectAssessmentDueDate"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

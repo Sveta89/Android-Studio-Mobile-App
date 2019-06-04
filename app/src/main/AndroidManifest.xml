@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="svetlanavictorino.mywgutracker">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Terms"
+            android:label="@string/title_activity_terms"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Courses"
+            android:label="@string/title_activity_courses"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Assessments"
+            android:label="@string/title_activity_assessments"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DetailTermActivity"
+            android:label="@string/title_activity_detail_term"
+            android:parentActivityName=".Terms"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.Terms" />
+        </activity>
+        <activity
+            android:name=".DetailCourseActivity"
+            android:label="@string/title_activity_detail_course"
+            android:parentActivityName=".Courses"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.Courses" />
+        </activity>
+        <activity
+            android:name=".ListOfCoursesByTerm"
+            android:label="@string/title_activity_list_of_courses_by_term"
+            android:parentActivityName=".DetailTermActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.DetailTermActivity" />
+        </activity>
+        <activity
+            android:name=".CourseAddActivity"
+            android:label="@string/title_activity_course_add"
+            android:parentActivityName=".ListOfCoursesByTerm"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.ListOfCoursesByTerm" />
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".DetailAssessmentActivity"
+            android:label="@string/title_activity_detail_assessment"
+            android:parentActivityName=".Assessments"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.Assessments" />
+        </activity>
+        <activity
+            android:name=".ListOfAssessmentsByCourse"
+            android:label="@string/title_activity_list_of_assessments_by_course"
+            android:parentActivityName=".DetailCourseActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.DetailCourseActivity" />
+        </activity>
+        <activity
+            android:name=".AssessmentAddActivity"
+            android:label="@string/title_activity_assessment_add"
+            android:parentActivityName=".ListOfAssessmentsByCourse"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.ListOfAssessmentsByCourse" />
+        </activity>
+        <activity
+            android:name=".TermAddActivity"
+            android:label="@string/title_activity_term_add"
+            android:parentActivityName=".Terms"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="svetlanavictorino.mywgutracker.Terms" />
+        </activity>
+    </application>
+
+</manifest>
